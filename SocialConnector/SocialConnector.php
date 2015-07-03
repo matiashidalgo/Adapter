@@ -9,7 +9,20 @@
 
 interface SocialConnector
 {
+    /**
+     * @return string
+     */
+    public function getTitle();
+    /**
+     * @return string
+     */
     public function getLoginUrl();
+    /**
+     * @return string
+     */
     public function getLogoutUrl();
+    /**
+     * @return array
+     */
     public function getUserInfo();
 }
